@@ -1,0 +1,6 @@
+{
+    "name": "9Anime Batch",
+    "version": "1.0",
+    "description": "Batch downloader for site 9anime.ru. Simply go to anime page and open this extension to begin downloading episodes faster than normal.",
+    "manifest_version": 2
+}

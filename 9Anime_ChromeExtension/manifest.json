@@ -1,7 +1,26 @@
 {
-    "name": "9Anime Batch",
+    "name": "9Anime Batch Downloader",
     "version": "1.0",
     "description": "Batch downloader for site 9anime.ru. Simply go to anime page and open this extension to begin downloading episodes faster than normal.",
-    "manifest_version": 2,
-    "permissions": ["activeTab", "declarativeContent", "storage"]
+    "permissions": ["storage"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/9Anime_Batch16.png",
+            "32": "images/9Anime_Batch32.png",
+            "48": "images/9Anime_Batch48.png",
+            "128": "images/9Anime_Batch128.png"
+        }
+    },
+    "icons": {
+        "16": "images/9Anime_Batch16.png",
+        "32": "images/9Anime_Batch32.png",
+        "48": "images/9Anime_Batch48.png",
+        "128": "images/9Anime_Batch128.png"
+    },
+    "manifest_version": 2
 }

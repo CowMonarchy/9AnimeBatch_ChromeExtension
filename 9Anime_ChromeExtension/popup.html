@@ -14,57 +14,114 @@
         }
         
         h2 {
-            color: #694ba1;
+            color: #6f51a6;
             text-transform: uppercase;
             font-family: 'Roboto', sans-serif;
         }
         
-        span {
-            color: #999;
-            font-weight: bold;
-            font-family: sans-serif;
-            padding-top: 4px;
-            padding-left: 4px;
-            padding-right: 4px;
-            padding-bottom: 4px;
-        }
-        
-        button {
-            color: #8c8c8c;
+        hr {
+            border-color: #999;
+            width: 100%;
+            position: absolute;
+            margin-left: -10px;
         }
         
         input {
             width: 40px;
         }
         
-        .AnimeName {
+        span {
+            color: #999;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        
+        .Top {
             width: 200px;
-            padding-top: 4px;
+            padding-top: 2px;
             padding-left: 4px;
             padding-right: 4px;
-            padding-bottom: 4px;
+            padding-bottom: 15px;
+        }
+        
+        .Mid {
+            width: 200px;
+            height: 50px;
+            padding-bottom: 20px;
+            align-items: center;
+        }
+        
+        #MidIn {
+            width: 50px;
+            height: 50px;
+            float: right;
+            padding-top: 6px;
+            padding-right: 5px;
+        }
+        
+        #MidTx {
+            height: 50px;
+            width: 130px;
+            float: left;
+            padding-top: 6.5px;
+            padding-left: 15px;
+        }
+        
+        .Bottom {
+            align-items: center;
+            padding-left: 60px;
+            padding-bottom: 5px;
+            border-radius: 6px;
         }
         
         #StartDownloadBtn {
-            width: 100;
+            width: 90px;
+            height: 45px;
+            border-radius: 4px;
+            color: #999;
+            background-color: #242229;
+            padding: 0;
+            border: none;
+        }
+        
+        .button:hover {
+            background-color: #5f4294;
         }
     </style>
 </head>
 
 <body>
-    <H2 class="AnimeName"> Naruto </H2>
-
-    <div>
-        <span class="Titles">Enter Starting Episode</span>
-        <input class=input, id="StartEpisodeInput" , type="number" , min="1" , max="977" , placeholder="1" , required=true>
-
-        <span class="Titles">Enter Download Quantity</span>
-        <input class=input, id="HowManyInput" , type="number" , min="1" , max="977" , placeholder="1" , required=true>
+    <div class="Top">
+        <H2 id="animeName"> Anime Name Goes Here</H2>
+        <hr>
     </div>
 
-    <button type='button' , class="Buttons" , id="StartDownloadBtn">Start Download</button>
 
-    <!-- <script src="popup.js"></script> -->
+    <div class="Mid">
+        <div id="MidTx">
+            <span class="Titles" , id="StartingEpisodeTxt">Starting Episode</span>
+            <p class="Filler"></p>
+            <span class="Titles" , id=EndingEpisodeTxt>Ending Episode</span>
+        </div>
+
+        <div id=MidIn>
+            <input class=input, id="StartEpisodeIn" , type="number" , min="1" , max="3" , placeholder="1">
+            <input class=input, id="EndingEpisodeIn" , type="number" , min="1" , max="3" , placeholder="1">
+        </div>
+    </div>
+
+
+    <div class="Bottom">
+        <button class="button" , id="StartDownloadBtn">Start Download</button>
+    </div>
+
+
+    <script>
+        var name = "Weeb show the sequel"
+        var animeName = document.getElementById("animeName");
+        animeName.innerHTML = name;
+    </script>
+
 
 </body>
 

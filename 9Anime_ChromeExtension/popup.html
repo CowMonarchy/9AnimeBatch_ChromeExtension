@@ -3,17 +3,69 @@
 
 <head>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        @font-face {
+            font-family: 'Roboto', sans-serif;
+            src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        }
+        
+        body {
+            background: #1D1C26;
+        }
+        
+        h2 {
+            color: #694ba1;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        span {
+            color: #999;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding-top: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-bottom: 4px;
+        }
+        
         button {
-            height: 30px;
-            width: 30px;
-            outline: none;
+            color: #8c8c8c;
+        }
+        
+        input {
+            width: 40px;
+        }
+        
+        .AnimeName {
+            width: 200px;
+            padding-top: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-bottom: 4px;
+        }
+        
+        #StartDownloadBtn {
+            width: 100;
         }
     </style>
 </head>
 
 <body>
-    <button id="BatchDownload"></button>
-    <script src="popup.js"></script>
+    <H2 class="AnimeName"> Naruto </H2>
+
+    <div>
+        <span class="Titles">Enter Starting Episode</span>
+        <input class=input, id="StartEpisodeInput" , type="number" , min="1" , max="977" , placeholder="1" , required=true>
+
+        <span class="Titles">Enter Download Quantity</span>
+        <input class=input, id="HowManyInput" , type="number" , min="1" , max="977" , placeholder="1" , required=true>
+    </div>
+
+    <button type='button' , class="Buttons" , id="StartDownloadBtn">Start Download</button>
+
+    <!-- <script src="popup.js"></script> -->
+
 </body>
 
 </html>

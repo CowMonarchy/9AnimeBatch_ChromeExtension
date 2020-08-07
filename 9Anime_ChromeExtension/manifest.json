@@ -4,7 +4,7 @@
     "description": "Batch downloader for site : https://9anime.ru                   ",
     "permissions": ["activeTab", "declarativeContent", "downloads", "storage"],
     "background": {
-        "scripts": ["background.js"],
+        "scripts": ["background.js", "popup.js"],
         "persistent": false
     },
     "page_action": {

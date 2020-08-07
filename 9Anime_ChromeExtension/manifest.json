@@ -1,12 +1,28 @@
 {
+    "manifest_version": 2,
+
+
     "name": "9Anime Batch Downloader",
     "version": "1.0",
-    "description": "Batch downloader for site : https://9anime.ru                   ",
-    "permissions": ["activeTab", "declarativeContent", "downloads", "storage"],
+    "author": "OST",
+    "description": "Batch downloader for site : https://9anime.ru\n\n\n",
+
+
+    "icons": {
+        "16": "images/9Anime_Batch16.png",
+        "32": "images/9Anime_Batch32.png",
+        "48": "images/9Anime_Batch48.png",
+        "128": "images/9Anime_Batch128.png"
+    },
+
+
+    "permissions": ["activeTab", "<all_urls>", "declarativeContent", "downloads", "storage", "tabs"],
+
     "background": {
         "scripts": ["background.js", "popup.js"],
         "persistent": false
     },
+
     "page_action": {
         "default_popup": "popup.html",
         "default_icon": {
@@ -15,12 +31,5 @@
             "48": "images/9Anime_Batch48.png",
             "128": "images/9Anime_Batch128.png"
         }
-    },
-    "icons": {
-        "16": "images/9Anime_Batch16.png",
-        "32": "images/9Anime_Batch32.png",
-        "48": "images/9Anime_Batch48.png",
-        "128": "images/9Anime_Batch128.png"
-    },
-    "manifest_version": 2
+    }
 }

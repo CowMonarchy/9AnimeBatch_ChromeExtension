@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+        @font-face {
+            font-family: 'Poppins', sans-serif;
+            src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+        }
+        
+        body {
+            width: 215px;
+        }
+        
+        h2 {
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Poppins', sans-serif;
+            margin-left: 62px;
+            margin-bottom: 45px;
+            margin-top: 50px;
+        }
+        
+        hr {
+            margin-left: -14px;
+            border: 0px solid #343434;
+            border-top-width: 4px;
+            width: 700px;
+        }
+        
+        span {
+            color: #666;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        
+        .BodyContainer {
+            background: #1c1c1c;
+            border-radius: 7px;
+            overflow: hidden;
+            height: 260px;
+        }
+        
+        .Top {
+            width: 200px;
+            padding-top: 2px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-bottom: 6px;
+        }
+        
+        .Mid {
+            width: 200px;
+            height: 50px;
+            padding-bottom: 20px;
+            margin-left: 4px;
+        }
+        
+        #MidTx {
+            height: 50px;
+            width: 130px;
+            float: left;
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+        
+        #BackButton {
+            position: absolute;
+            width: 45px;
+            height: 18px;
+            top: 12px;
+            right: 173px;
+            z-index: 3;
+            background-color: transparent;
+            border: none;
+        }
+        
+        #BackIcn {
+            position: absolute;
+            width: 16px;
+            height: 14px;
+            top: 14px;
+            right: 205px;
+            z-index: 2;
+        }
+        
+        #BackTxt {
+            position: absolute;
+            width: 16px;
+            height: 14px;
+            top: 14px;
+            right: 188px;
+            z-index: 2;
+        }
+        
+        #ParallelLimit {
+            margin-top: 1px;
+            width: 46px;
+        }
+        
+        #DwnDirect {
+            position: absolute;
+            width: 185px;
+            bottom: 55px;
+            left: 18px;
+        }
+        
+        #ChooseBtn {
+            border: none;
+            width: 90px;
+            height: 25px;
+            text-align: center;
+            border-radius: 32px;
+            color: #fff;
+            background-color: #6f42c1;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 60px;
+            margin-left: -75px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="BodyContainer" , id="BodyContainer">
+        <div class="Top">
+            <img src=/images/Back_Arrow.png id="BackIcn"><span id="BackTxt">Back</span>
+            <a class="button" id="BackButton" href="popup.html"></a>
+            <H2 id="animeName">SETTINGS</H2>
+            <hr>
+        </div>
+
+
+        <div class="Mid">
+            <div id="MidTx">
+                <span class="Titles" , id="StartingEpisodeTxt">Parallel Limit :</span>
+                <p class="Filler"></p>
+                <span class="Titles" , id=EndingEpisodeTxt>Download Location :</span>
+            </div>
+
+            <div id=MidIn>
+                <input class=input, id="ParallelLimit" , type="number" , min="1" , max="3" , placeholder="1">
+                <input readonly, class="input" , id="DwnDirect">
+                <button class="button" id=ChooseBtn>Change</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+
+<script src="popup.js"></script>
+
+</html>

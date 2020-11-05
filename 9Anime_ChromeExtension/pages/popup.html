@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+        @font-face {
+            font-family: 'Poppins', sans-serif;
+            src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+        }
+        
+        body {
+            width: 215px;
+        }
+        
+        h2 {
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Poppins', sans-serif;
+            margin-left: 14px;
+        }
+        
+        hr {
+            margin-left: -14px;
+            border: 0px solid #343434;
+            border-top-width: 6px;
+            width: 700px;
+        }
+        
+        input {
+            width: 40px;
+        }
+        
+        span {
+            color: #666;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        
+        .BodyContainer {
+            background: #1c1c1c;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+        
+        .Top {
+            width: 200px;
+            padding-top: 2px;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-bottom: 6px;
+        }
+        
+        .Mid {
+            width: 200px;
+            height: 50px;
+            padding-bottom: 20px;
+            margin-left: 4px;
+        }
+        
+        #MidIn {
+            width: 50px;
+            height: 50px;
+            float: right;
+            padding-top: 6px;
+            padding-right: 5px;
+        }
+        
+        #MidTx {
+            height: 50px;
+            width: 130px;
+            float: left;
+            padding-top: 6.5px;
+            padding-left: 15px;
+        }
+        
+        .Bottom {
+            text-align: center;
+            padding-left: 60px;
+            padding-bottom: 5px;
+            border-radius: 6px;
+            font-family: 'Poppins';
+            margin-bottom: 24px;
+        }
+        
+        #SettingsButton {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            top: 12px;
+            right: 12px;
+            z-index: 2;
+            background-color: transparent;
+            border: none;
+            z-index: 3;
+        }
+        
+        #SettingsIcn {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 14px;
+            right: 14px;
+            z-index: 2;
+        }
+        
+        #StartDownloadIcn {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            bottom: 52px;
+            left: 56px;
+            z-index: 2;
+        }
+        
+        #StartDownloadBtn {
+            border: none;
+            width: 150px;
+            height: 45px;
+            margin-left: -60px;
+            text-align: center;
+            border-radius: 32px;
+            color: #fff;
+            background-color: #6f42c1;
+            line-height: 45px;
+            font-family: 'Poppins', sans-serif;
+            z-index: 1;
+        }
+        
+        .button:hover {
+            background-color: #5f4294;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="BodyContainer" , id="BodyContainer">
+        <div class="Top">
+            <a class="button" , id="SettingsButton" href="settings.html"></a>
+            <img src=/images/Popup_Settings.png id="SettingsIcn">
+            <H2 id="animeName">Anime Name Here</H2>
+            <hr>
+        </div>
+
+
+        <div class="Mid">
+            <div id="MidTx">
+                <span class="Titles" , id="StartingEpisodeTxt">Starting Episode</span>
+                <p class="Filler"></p>
+                <span class="Titles" , id=EndingEpisodeTxt>Ending Episode</span>
+            </div>
+
+            <div id=MidIn>
+                <input class=input, id="StartEpisodeIn" , type="number" , min="1" , max="3" , placeholder="1">
+                <input class=input, id="EndingEpisodeIn" , type="number" , min="1" , max="3" , placeholder="1">
+            </div>
+        </div>
+
+
+        <div class="Bottom">
+            <img src=/images/Popup_Arrow.png id="StartDownloadIcn">
+            <button class="button" , id="StartDownloadBtn">&ensp;&ensp;Start Download</button>
+        </div>
+    </div>
+
+
+</body>
+
+
+<script src="/scripts/popup.js"></script>
+
+</html>

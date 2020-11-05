@@ -5,7 +5,7 @@
     "name": "9Anime Batch Downloader",
     "version": "1.0",
     "author": "OST",
-    "description": "Batch downloader for site : https://9anime.ru\n\n\n",
+    "description": "Batch downloader for site : https://www12.9anime.ru/\n\n\n",
 
 
     "icons": {
@@ -19,12 +19,12 @@
     "permissions": ["activeTab", "<all_urls>", "declarativeContent", "downloads", "storage", "tabs"],
 
     "background": {
-        "scripts": ["background.js", "popup.js"],
+        "scripts": ["scripts/background.js", "scripts/popup.js"],
         "persistent": false
     },
 
     "page_action": {
-        "default_popup": "popup.html",
+        "default_popup": "pages/popup.html",
         "default_icon": {
             "16": "images/9Anime_Batch16.png",
             "32": "images/9Anime_Batch32.png",

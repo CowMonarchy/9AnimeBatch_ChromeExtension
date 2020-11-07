@@ -1,13 +1,9 @@
-document.onreadystatechange = function() {
-    if (document.readyState === "complete") {
-        console.log("document is loaded");
-    }
-}
-
-jQuery(document);
-
+//
+//
+//
 function GetAnimeName() {
-    // console.log("The Show Name Is :", showName);
+    var showName = $("h2[data-jtitle]").val();
+    console.log("The Show Name Is :", showName);
 }
 
 

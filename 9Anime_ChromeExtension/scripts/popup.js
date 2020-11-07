@@ -1,7 +1,14 @@
-function getAnimeName() {
-    //Pulls anime name from anime page h2 element and pastes text it into popup.html h2
-    var animeName = document.querySelector("h2.title[data-jtitle]");
-    var setName = document.getElementById("animeName");
-    setName.innerHTML = document.URL;
-    return setName;
+document.onreadystatechange = function() {
+    if (document.readyState === "complete") {
+        console.log("document is loaded");
+    }
 }
+
+jQuery(document);
+
+function GetAnimeName() {
+    // console.log("The Show Name Is :", showName);
+}
+
+
+GetAnimeName();

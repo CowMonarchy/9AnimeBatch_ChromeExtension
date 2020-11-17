@@ -1,1 +1,1 @@
-# 9AnimeBatch_ChromeExtension
+# GoGoDownloader_ChromeExtension

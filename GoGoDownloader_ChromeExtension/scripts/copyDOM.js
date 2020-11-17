@@ -1,7 +1,19 @@
 //
 //
 //
+chrome.runtime.onMessage.addListener(
+    function(request, sender, sendResponse) {
+        if (request.message === "Retrive_Anime_Info") {
+            //Obtaining Info From Webpage
+            var link = $("link[rel = 'canonical']").eq(0).attr('href');
 
-var link = $("link[rel = 'canonical']").eq(0).attr('href');
 
-console.log("The Link Is : ", link);
+
+
+
+
+            //Returning that Info to popup.js
+            chrome.runtime.sendMessage({ "message": "Return_Anime_Info", "Info": link });
+        }
+    }
+);

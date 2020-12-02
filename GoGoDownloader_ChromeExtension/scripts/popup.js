@@ -8,7 +8,8 @@ chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
 
         document.getElementById('displayAnimeName').innerText = response.animeName;
         document.getElementById('StartEpisodeIn').setAttribute('max', response.maxNumber);
-        document.getElementById('EndingEpisodeIn').setAttribute('max', response.maxNumber)
+        document.getElementById('EndingEpisodeIn').setAttribute('max', response.maxNumber);
+        document.getElementById('EndingEpisodeIn').setAttribute('placeholder', response.maxNumber);
     });
 });
 //-------------------------------------------------------------------------------------------------

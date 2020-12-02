@@ -30,14 +30,14 @@
     },
 
     "content_scripts": [{
-        "matches": ["https://www2.gogoanime.video/*-episode-*"],
-        "css": [],
+        "matches": ["https://gogoanime.vc/*-episode-*"],
+        "run_at": "document_start",
         "js": ["frameworks/jquery-3.5.1.min.js", "scripts/copyDOM.js"]
     }],
 
 
 
-    "browser_action": {
+    "page_action": {
         "default_popup": "pages/popup.html",
         "default_icon": {
             "16": "images/GoGo_Logo16.png",

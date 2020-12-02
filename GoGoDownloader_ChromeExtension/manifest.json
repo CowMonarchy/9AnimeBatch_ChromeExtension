@@ -26,7 +26,7 @@
 
     "background": {
         "scripts": ["scripts/background.js", "frameworks/jquery-3.5.1.min.js", "scripts/copyDOM.js", "scripts/popup.js"],
-        "persistent": false
+        "persistent": true
     },
 
     "content_scripts": [{
